@@ -1,0 +1,96 @@
+body { 
+    max-width: 900px;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+header {
+    border-bottom: 2pt solid;
+    border-color:rgb(0, 176, 80);
+    width: 50%;
+    font-weight: bold;
+    font-size: 16pt;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.subtitle {
+    font-size: 12pt;
+    font-style: italic;
+}
+
+main>div {
+    border: 3pt solid;
+    border-color: rgb(192, 0, 0);
+    float: left;
+    margin: 2px -2px -6px -2px;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    main {
+        display: flex;
+    }
+
+    main>div {
+        width: calc(50% - 4px);
+    }
+}
+
+.aboutme {
+    text-align: left;
+}
+img {
+    width: 50%;
+    margin: 15px;
+}
+
+.list {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p,ol{
+    margin: 4px;
+    flex-wrap: wrap;
+}
+
+input, textarea {
+    max-width: 300px;
+    width: 100%;
+}
+
+form {
+    border: 1pt solid;
+    border-radius: 16px;
+    border-color:rgb(207, 203, 203);
+    margin: 25px 20px 25px 20px;
+    padding: 5px 20px 10px 20px;
+    font-size: 0.8em;
+}
+
+label {
+    width: 30%;
+    text-align: right;
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-family: serif;
+}
+
+
+form div {
+    display: block;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+input[type=submit] {
+    width: auto;
+    margin: 25px 0 0 0;
+}
